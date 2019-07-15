@@ -2,8 +2,12 @@ spring:
   profiles:
     active: local
 
-server:
-  port: 8081
+mcm:
+  server:
+    port: 8081
+    boss-thread-count: 1
+    worker-thread-count: 8
+
 
 # local
 ---
